@@ -86,7 +86,7 @@
       "source": [
         "def consulta_cnpj(cnpj):\n",
         "  url = f\"https://receitaws.com.br/v1/cnpj/{cnpj}\"\n",
-        "  querystring = {\"token\":\"E9245943-9BEB-4ADF-81BE-F1F8D48FFC1D\",\"cnpj\":'06990590000123',\"plugin\":\"RF\"}\n",
+        "  querystring = {\"token\":\"E9245943-ZZZZ-YYYY-XXXX-XXXXXXXXXXXX\",\"cnpj\":'06990590000123',\"plugin\":\"RF\"}\n",
         "  response = requests.request(\"GET\", url, params=querystring)\n",
         "  resp = json.loads(response.text)\n",
         "  return resp['nome'],resp['cnpj'],resp['situacao']"
